@@ -62,17 +62,16 @@ export default function Contact() {
     }
 
     const handleCall = () => {
-        const phoneNumber = process.env.NEXT_PHONE_NUMBER;
+        const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER;
         const telUrl = `tel:${phoneNumber}`;
         window.open(telUrl, '_blank');
         // window.location.href = `${process.env.NEXT_PHONE_NUMBER}`;
     };
     const handleWhatsappClick = () => {
-        const whatsappNumber = process.env.NEXT_PHONE_NUMBER;
+        const whatsappNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER;
         const whatsappUrl = `https://wa.me/${whatsappNumber}`;
         window.open(whatsappUrl, '_blank');
     };
-
 
 
     return (
@@ -110,7 +109,7 @@ export default function Contact() {
                 <div className="w-[60%] lg:w-[40%] xl:w-[40%] flex items-center gap-4 text-4xl justify-center mt-8">
                     <span data-aos="fade-right" data-aos-delay="200" className="cursor-pointer" onClick={handleCall}><FaPhoneSquare className="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-200" /></span>
                     <span data-aos="fade-up" data-aos-delay="400" className="cursor-pointer" onClick={handleWhatsappClick}><FaWhatsappSquare className="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-200" /></span>
-                    <span data-aos="fade-left" data-aos-delay="600" className="cursor-pointer text-5xl" onClick={() => window.open(`mailto:${process.env.NEXT_EMAIL_ID}`)}><MdEmail className="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-200" /></span>
+                    <span data-aos="fade-left" data-aos-delay="600" className="cursor-pointer text-5xl" onClick={() => window.open(`mailto:${process.env.NEXT_PUBLIC_EMAIL_ID}`)}><MdEmail className="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-200" /></span>
                 </div>
             </div>
         </div>
