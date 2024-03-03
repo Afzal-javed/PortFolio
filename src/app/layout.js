@@ -2,7 +2,7 @@ import SideNavBar from "@/Components/SideBar/SideNavBar";
 import "./globals.css";
 import Footer from "@/Components/Footer/Footer";
 import Providers from "./redux/Provider";
-import Head from "next/head";
+
 // import logo from "./../../public/assets/logo2.jpg";
 
 export const metadata = {
@@ -18,29 +18,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
-      <Head>
-        {/* Add a link to your favicon file */}
-        <link
-          rel="icon"
-          href="/assets/logo2.jpg"
-          type="image/jpg"
 
-        />
-      </Head>
-      <html lang="en">
-        <body>
-          <Providers>
-            <div className="w-full flex m-0 p-0 scroll-smooth">
-              <SideNavBar />
-              <div className="w-full flex flex-col scroll-smooth">
-                {children}
-                <Footer />
-              </div>
+    <html lang="en">
+      <body>
+        <Providers>
+          <div className="w-full flex m-0 p-0 scroll-smooth">
+            <SideNavBar />
+            <div className="w-full flex flex-col scroll-smooth">
+              {children}
+              <Footer />
             </div>
-          </Providers>
-        </body>
-      </html>
-    </>
+          </div>
+        </Providers>
+      </body>
+    </html>
   )
 }

@@ -1,14 +1,9 @@
 "use client";
+import "./globals.css";
 import About from "@/Components/AllPages/About";
 import Contact from "@/Components/AllPages/Contact";
 import Education from "@/Components/AllPages/Education";
 import HomePage from "@/Components/AllPages/Home";
-// import HomePage from "./home/page";
-// import About from "./about/page";
-// import Project from "./project/page";
-// import Skill from "./skills/page";
-// import Education from "./education/page";
-// import Contact from "./contact/page";
 import Project from "@/Components/AllPages/Project";
 import Skill from "@/Components/AllPages/Skills";
 import AOS from 'aos';
@@ -16,6 +11,12 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+// import HomePage from "./home/page";
+// import About from "./about/page";
+// import Project from "./project/page";
+// import Skill from "./skills/page";
+// import Education from "./education/page";
+// import Contact from "./contact/page";
 
 export default function Home() {
     useEffect(() => {

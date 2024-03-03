@@ -1,0 +1,8 @@
+{
+    "manifest_version": 3,
+    "name": "PortFolio",
+    "version": "1.0.1",
+    "short_name": "portfolio",
+    "description": "An application built with Next.js",
+    "start_url": "/"
+}
